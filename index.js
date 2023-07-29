@@ -51,5 +51,12 @@ function makeSound(value){
 }
 
 function buttonAnimation(value){
+var activeButton=document.querySelector("."+value);
+activeButton.classList.add("pressed");
+
+setTimeout(function(){
+    activeButton.classList.remove("pressed");
+
+},100)
 
 }
